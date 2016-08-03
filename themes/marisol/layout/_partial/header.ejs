@@ -1,0 +1,72 @@
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <span class="preloader-dot"></span>
+    </div>
+    <!-- END / PRELOADER -->
+
+    <!-- PAGE WRAP -->
+    <div id="page-wrap">
+
+<!-- HEADER -->
+<header id="header">
+
+    <!-- HEADER TOP -->
+    <div class="header_top">
+        <div class="container">
+            <div class="header_left float-left">
+                <span><i class="hillter-icon-cloud"></i> 26.04 C</span>
+                <span><i class="hillter-icon-location"></i> Zrtava Fasizma 136, 85310 Budva, Montenegro</span>
+                <span><i class="hillter-icon-phone"></i> +49 176 6789 5189</span>
+            </div>
+            <div class="header_right float-right">
+
+                <div class="dropdown language">
+                    <span>ENG</span>
+
+                    <ul>
+                        <li class="active"><a href="#">ENG</a></li>
+                        <li><a href="#">RUS</a></li>
+                        <li><a href="#">GER</a></li>
+                        <li><a href="#">MNE</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- END / HEADER TOP -->
+
+    <!-- HEADER LOGO & MENU -->
+    <div class="header_content" id="header_content">
+
+        <div class="container">
+            <!-- HEADER LOGO -->
+            <div class="header_logo">
+                <a href="<%- url_for() %>"><img src="images/logo-header.png" alt=""></a>
+            </div>
+            <!-- END / HEADER LOGO -->
+
+            <!-- HEADER MENU -->
+            <nav class="header_menu">
+                <ul class="menu">
+                    <!-- for current selection class="current-menu-item" -->
+                    <% for (var i in theme.menu){ %>
+                      <li ><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+                    <% } %>
+                </ul>
+            </nav>
+            <!-- END / HEADER MENU -->
+
+            <!-- MENU BAR -->
+            <span class="menu-bars">
+                <span></span>
+            </span>
+            <!-- END / MENU BAR -->
+
+        </div>
+    </div>
+    <!-- END / HEADER LOGO & MENU -->
+
+</header>
+<!-- END / HEADER -->

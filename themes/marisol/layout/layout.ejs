@@ -1,0 +1,34 @@
+<%- partial('_partial/head') %>
+<!--[if IE 7]> <body class="ie7 lt-ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 8]> <body class="ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 9]> <body class="ie9 lt-ie10"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+
+  <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
+
+  <% if (is_home()) { %>
+  <%- partial('_pages/home', null, {cache: !config.relative_link}) %>
+  <% }  %>
+
+
+  <% if (page.source == 'about/index.md') { %>
+    <%- partial('_pages/about', null, {cache: !config.relative_link}) %>
+  <% }  %>
+
+  <% if (page.source == 'gallery/index.md') { %>
+    <%- partial('_pages/gallery', null, {cache: !config.relative_link}) %>
+  <% }  %>
+
+  <% if (page.source == 'budva/index.md') { %>
+    <%- partial('_pages/budva', null, {cache: !config.relative_link}) %>
+  <% }  %>
+
+  <% if (page.source == 'guestbook/index.md') { %>
+    <%- partial('_pages/guestbook', null, {cache: !config.relative_link}) %>
+  <% }  %>
+
+  <% if (page.source == 'contact/index.md') { %>
+    <%- partial('_pages/contact', null, {cache: !config.relative_link}) %>
+  <% }  %>
+
+<%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
