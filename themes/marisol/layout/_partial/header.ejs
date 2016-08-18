@@ -25,10 +25,10 @@
                     <span>ENG</span>
 
                     <ul>
-                        <li class="active"><a href="#">ENG</a></li>
-                        <li><a href="#">RUS</a></li>
-                        <li><a href="#">GER</a></li>
-                        <li><a href="#">MNE</a></li>
+                        <li class="active"><a href="/">ENG</a></li>
+                        <li><a href="/ru">RUS</a></li>
+                        <li><a href="/de">GER</a></li>
+                        <li><a href="/sr">MNE</a></li>
                     </ul>
                 </div>
 
@@ -43,7 +43,7 @@
         <div class="container">
             <!-- HEADER LOGO -->
             <div class="header_logo">
-                <a href="<%- url_for() %>"><img src="/images/logo-header.png" alt=""></a>
+                <a href="<%- url_for_lang() %>"><img src="/images/logo-header.png" alt=""></a>
             </div>
             <!-- END / HEADER LOGO -->
 
@@ -52,7 +52,7 @@
                 <ul class="menu">
                     <!-- for current selection class="current-menu-item" -->
                     <% for (var i in theme.menu){ %>
-                      <li ><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+                      <li ><a href="<%- url_for_lang(theme.menu[i]) %>"><%= i %></a></li>
                     <% } %>
                 </ul>
             </nav>

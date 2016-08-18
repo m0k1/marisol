@@ -10,6 +10,11 @@ author: Simonida Milicevic
 language:
 - en
 - sr
+
+i18n:
+  type: [page, post]
+  generator: [index, archive, category, tag]
+
 timezone: Europe/Belgrade
 
 # URL
@@ -26,7 +31,7 @@ tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
-i18n_dir: en
+i18n_dir: :lang
 skip_render:
 
 # Writing

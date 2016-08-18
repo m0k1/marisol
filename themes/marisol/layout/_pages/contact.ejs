@@ -22,8 +22,8 @@
                 <div class="col-md-6 col-lg-5">
 
                     <div class="text">
-                        <h2>Contact</h2>
-                        <p>Want to get in touch with us ? Send us a mail, phone or send message via this form.</p>
+                        <h2><%= __('contact') %></h2>
+                        <p><%= __('contact_intro') %></p>
                         <ul>
                             <li><i class="icon hillter-icon-location"></i> Zrtava Fasizma 136, 85310 Budva, Montenegro</li>
                             <li><i class="icon hillter-icon-phone"></i> +49 176 6789 5189</li>
@@ -38,19 +38,19 @@
                         <form id="send-contact-form" action="#" method="post">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <input type="text" class="field-text"  name="name" placeholder="Name">
+                                    <input type="text" class="field-text"  name="name" placeholder="<%= __('name') %>">
                                 </div>
                                 <div class="col-sm-6">
-                                    <input type="text" class="field-text" name="email" placeholder="Email">
+                                    <input type="text" class="field-text" name="email" placeholder="<%= __('email') %>">
                                 </div>
                                 <div class="col-sm-12">
-                                    <input type="text" class="field-text" name="subject" placeholder="Subject">
+                                    <input type="text" class="field-text" name="subject" placeholder="<%= __('subject') %>">
                                 </div>
                                 <div class="col-sm-12">
-                                    <textarea cols="30" rows="10" name="message"  class="field-textarea" placeholder="Write what do you want"></textarea>
+                                    <textarea cols="30" rows="10" name="message"  class="field-textarea" placeholder="<%= __('message_intro') %>"></textarea>
                                 </div>
                                 <div class="col-sm-6">
-                                    <button type="submit" class="awe-btn awe-btn-13">SEND</button>
+                                    <button type="submit" class="awe-btn awe-btn-13"><%= __('SEND') %></button>
                                 </div>
                             </div>
                             <div id="contact-content"></div>
