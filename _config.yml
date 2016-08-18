@@ -7,7 +7,9 @@ title: Villa Marisol
 subtitle:
 description: Best place to stay in Budva
 author: Simonida Milicevic
-language: en
+language:
+- en
+- sr
 timezone: Europe/Belgrade
 
 # URL
@@ -24,7 +26,7 @@ tag_dir: tags
 archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
-i18n_dir: :lang
+i18n_dir: en
 skip_render:
 
 # Writing
