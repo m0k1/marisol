@@ -22,11 +22,11 @@
             <div class="header_right float-right">
 
                 <div class="dropdown language">
-                    <span><%= page.lang %></span>
+                    <span class="uppercase"><%= page.lang %></span>
 
                     <ul>
                       <% get_langs().forEach(lang => { %>
-                        <li class"<%= lang === page.lang ? 'active' : ''%>"><a href="<%= switch_lang(lang) %>"><%= lang %></a></li>
+                        <li class="<%= lang === page.lang ? 'active' : ''%>"><a class="uppercase" href="<%= switch_lang(lang) %>"><%= lang %></a></li>
                       <% }) %>
                     </ul>
                 </div>

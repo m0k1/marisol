@@ -9361,6 +9361,12 @@ blockquote p:after {
     height: 40px;
     line-height: 22px
 }
+a.uppercase {
+    text-transform: uppercase;
+}
+span.uppercase {
+    text-transform: uppercase;
+}
 .list-field-send li .awe-btn.awe-btn-13:hover {
     border-color: #344a71!important;
     background-color: #344a71!important
