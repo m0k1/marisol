@@ -12,8 +12,8 @@ language:
 - sr
 
 i18n:
-  type: [page, post]
-  generator: [index, archive, category, tag]
+  type: page
+  generator: index
 
 timezone: Europe/Belgrade
 
