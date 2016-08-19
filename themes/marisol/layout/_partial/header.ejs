@@ -22,13 +22,12 @@
             <div class="header_right float-right">
 
                 <div class="dropdown language">
-                    <span>ENG</span>
+                    <span><%= page.lang %></span>
 
                     <ul>
-                        <li class="active"><a href="/">ENG</a></li>
-                        <li><a href="/ru">RUS</a></li>
-                        <li><a href="/de">GER</a></li>
-                        <li><a href="/sr">MNE</a></li>
+                      <% get_langs().forEach(lang => { %>
+                        <li class"<%= lang === page.lang ? 'active' : ''%>"><a href="<%= switch_lang(lang) %>"><%= lang %></a></li>
+                      <% }) %>
                     </ul>
                 </div>
 
@@ -43,7 +42,11 @@
         <div class="container">
             <!-- HEADER LOGO -->
             <div class="header_logo">
-                <a href="<%- url_for_lang() %>"><img src="/images/logo-header.png" alt=""></a>
+                <a href="<% if (is_home()) { %>
+          <%= url_for_lang(config.root) %>
+        <% } else { %>
+          <%= url_for_lang(page.lang) %>
+        <% } %>"><img src="/images/logo-header.png" alt=""></a>
             </div>
             <!-- END / HEADER LOGO -->
 
