@@ -12,7 +12,11 @@
                             <div class="widget widget_logo">
                                 <div class="widget-logo">
                                     <div class="img">
-                                        <a href="/"><img src="/images/logo-footer.png" alt=""></a>
+                                        <a href="<% if (is_home()) { %>
+                                  <%= url_for_lang(config.root) %>
+                                <% } else { %>
+                                  <%= url_for_lang(page.lang) %>
+                                <% } %>"><img src="/images/logo-footer.png" alt=""></a>
                                     </div>
                                     <div class="text">
                                         <p><i class="hillter-icon-location"></i> Zrtava Fasizma 136, 85310 Budva, Montenegro</p>
@@ -27,9 +31,16 @@
                             <div class="widget">
                                 <h4 class="widget-title">&nbsp;</h4>
                                 <ul>
+                                    <% if (page.lang == "en"){%>
                                     <li><a href="/"><%= __('home') %></a></li>
                                     <li><a href="/about"><%= __('about') %></a></li>
                                     <li><a href="/gallery"><%= __('gallery') %></a></li>
+                                    <% }else{%>
+                                    <li><a href="/<%= page.lang %>"><%= __('home') %></a></li>
+                                    <li><a href="/<%= page.lang %>/about"><%= __('about') %></a></li>
+                                    <li><a href="/<%= page.lang %>/gallery"><%= __('gallery') %></a></li>
+                                    <% } %>
+
                                 </ul>
                             </div>
                         </div>
@@ -38,9 +49,16 @@
                             <div class="widget">
                                 <h4 class="widget-title">&nbsp;</h4>
                                 <ul>
-                                    <li><a href="/budva"><%= __('budva') %></a></li>
-                                    <li><a href="/guestbook"><%= __('guestbook') %></a></li>
-                                    <li><a href="/contact"><%= __('contact') %></a></li>
+                                  <% if (page.lang == "en"){%>
+                                  <li><a href="/budva"><%= __('budva') %></a></li>
+                                  <li><a href="/guestbook"><%= __('guestbook') %></a></li>
+                                  <li><a href="/contact"><%= __('contact') %></a></li>
+                                  <% }else{%>
+                                  <li><a href="/<%= page.lang %>/budva"><%= __('budva') %></a></li>
+                                  <li><a href="/<%= page.lang %>/guestbook"><%= __('guestbook') %></a></li>
+                                  <li><a href="/<%= page.lang %>/contact"><%= __('contact') %></a></li>
+                                  <% } %>
+
                                 </ul>
                             </div>
                         </div>
