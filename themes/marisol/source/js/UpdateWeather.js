@@ -15,7 +15,7 @@ function UpdateWeather()
           document.getElementById("myspan").textContent="<i class='hillter-icon-cloud'></i> ".xmlhttp.responseText;
         }
     }
-    xmlhttp.open("GET", "https://api.m0k1.org/marisol/weather.php", false);
+    xmlhttp.open("GET", "https://api.villa-marisol.me/weather.php", false);
     xmlhttp.send();
 }
 
