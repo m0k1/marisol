@@ -433,7 +433,7 @@ function sendBooking() {
 
 	function q(e, t, a, n) {
 		var i = {
-			url: "images/icon-marker.png",
+			url: "/images/icon-marker.png",
 			size: new google.maps.Size(27, 40),
 			origin: new google.maps.Point(0, 0),
 			anchor: new google.maps.Point(14, 40)
