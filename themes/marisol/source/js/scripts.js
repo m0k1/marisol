@@ -565,15 +565,6 @@ function sendBooking() {
 				required: "Please enter a message.",
 				minlength: e.format("At least {0} characters required.")
 			}
-		},
-		submitHandler: function(t) {
-			return e(t).ajaxSubmit({
-				success: function(t, a, n, i) {
-					e("#contact-content").slideUp(600, function() {
-						e("#send-contact-form input[type=text], #send-contact-form textarea").val(""), e("#contact-content").html(t).slideDown(600)
-					})
-				}
-			}), !1
 		}
 	}), e("#ajax-form-search-room").length && (e("#ajax-form-search-room").validate({
 		rules: {

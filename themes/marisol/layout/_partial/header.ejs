@@ -15,7 +15,7 @@
     <div class="header_top">
         <div class="container">
             <div class="header_left float-left">
-                <span><i class="hillter-icon-cloud"></i> 31.04 C</span>
+                <span><i class="hillter-icon-cloud"></i> 41.04 C</span>
                 <span><i class="hillter-icon-location"></i> Zrtava Fasizma 136, 85310 Budva, Montenegro</span>
                 <span><i class="hillter-icon-phone"></i> +49 176 6789 5189</span>
             </div>
@@ -42,11 +42,7 @@
         <div class="container">
             <!-- HEADER LOGO -->
             <div class="header_logo">
-                <a href="<% if (is_home()) { %>
-          <%= url_for_lang(config.root) %>
-        <% } else { %>
-          <%= url_for_lang(page.lang) %>
-        <% } %>"><img src="/images/logo-header.png" alt=""></a>
+                <a href="<% if (page.lang == "en"){%>/<% }else{%>/<%= page.lang %><% } %>"><img src="/images/logo-header.png" alt=""></a>
             </div>
             <!-- END / HEADER LOGO -->
 
@@ -54,8 +50,20 @@
             <nav class="header_menu">
                 <ul class="menu">
                     <!-- for current selection class="current-menu-item" -->
-                    <% for (var i in theme.menu){ %>
-                      <li ><a href="<%- url_for_lang(theme.menu[i]) %>"><%= i %></a></li>
+                    <% if (page.lang == "en"){%>
+                    <li><a href="/"><%= __('home') %></a></li>
+                    <li><a href="/about"><%= __('about') %></a></li>
+                    <li><a href="/gallery"><%= __('gallery') %></a></li>
+                    <li><a href="/budva"><%= __('budva') %></a></li>
+                    <li><a href="/guestbook"><%= __('guestbook') %></a></li>
+                    <li><a href="/contact"><%= __('contact') %></a></li>
+                    <% }else{%>
+                    <li><a href="/<%= page.lang %>"><%= __('home') %></a></li>
+                    <li><a href="/<%= page.lang %>/about"><%= __('about') %></a></li>
+                    <li><a href="/<%= page.lang %>/gallery"><%= __('gallery') %></a></li>
+                    <li><a href="/<%= page.lang %>/budva"><%= __('budva') %></a></li>
+                    <li><a href="/<%= page.lang %>/guestbook"><%= __('guestbook') %></a></li>
+                    <li><a href="/<%= page.lang %>/contact"><%= __('contact') %></a></li>
                     <% } %>
                 </ul>
             </nav>

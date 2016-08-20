@@ -31,4 +31,7 @@
     <%- partial('_pages/contact', null, {cache: !config.relative_link}) %>
   <% }  %>
 
+  <% if (page.source == 'guestwrite/index.md') { %>
+    <%- partial('_pages/guestwrite', null, {cache: !config.relative_link}) %>
+  <% }  %>
 <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
