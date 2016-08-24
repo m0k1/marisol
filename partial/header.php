@@ -22,7 +22,7 @@
             <div class="header_right float-right">
 
                 <div class="dropdown language">
-                    <span class="uppercase"></span>
+                    <span class="uppercase"><?php echo $lang; ?></span>
 
                     <ul>
 					<?php foreach ($languages as $value) { ?>
@@ -42,7 +42,7 @@
         <div class="container">
             <!-- HEADER LOGO -->
             <div class="header_logo">
-                <a href="<?php echo $lang; ?>/"><img src="/images/logo-header.png" alt=""></a>
+                <a href="/<?php echo $lang; ?>/"><img src="/images/logo-header.png" alt=""></a>
             </div>
             <!-- END / HEADER LOGO -->
 
