@@ -110,6 +110,6 @@
     <script src="/js/lib/jquery.validate.min.js"></script>
 
     <!-- Custom jQuery -->
-    <script src="/js/scripts2.js"></script>
+    <script src="/js/scripts3.js"></script>
 </body>
 </html>
