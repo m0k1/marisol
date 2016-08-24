@@ -35,7 +35,7 @@
                                     <textarea cols="30" rows="10" name="message"  class="field-textarea" placeholder="<?php echo $langs['message_intro']; ?>"></textarea>
                                 </div>
                                 <div class="col-sm-6">
-                                    <button type="submit" class="awe-btn awe-btn-13"><?php echo $langs['SEND']; ?></button>
+                                    <button type="submit" class="awe-btn awe-btn-13"><?php echo $langs['send']; ?></button>
                                 </div>
                             </div>
                             <div id="contact-content"></div>
