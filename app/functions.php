@@ -3,7 +3,7 @@
 //check if requested page exist
 function page_exist($page)
 {
-	if(file_exists('page/'.$filename))
+	if(file_exists('page/'.$page.".php"))
 	{
 	   return true;
 	}
