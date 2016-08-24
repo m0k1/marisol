@@ -25,6 +25,10 @@ if(isset($_GET["update_weather"]))
   fclose($fdata);
   echo $weather->temperature;
 }
+else if(isset($_GET['check']))
+{
+  var_dump($_POST);
+}
 else
 {
   require 'vendor/autoload.php';
