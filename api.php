@@ -47,6 +47,6 @@ else
                                   'to'      => 'moki.forum@gmail.com',
                                   'subject' => '[marisol] Nova Sajt Poruka',
                                   'text'    => $text));
-  echo "Message is sent, click <a href='https://villa-marisol.me'>HERE</a> to go back.
+  echo "Message is sent, click <a href='https://villa-marisol.me'>HERE</a> to go back.";
 }
 ?>
