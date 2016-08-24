@@ -1,6 +1,7 @@
 <?php
 include 'app/init.php';
 include 'app/functions.php';
+$weather = file_get_contents('tempx.txt');
 $get2 = str_replace("/", "", $get2);
 //check if secound get is empty (page without language request aka site.com/page)
 if($get2 == '')
