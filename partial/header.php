@@ -42,7 +42,7 @@
         <div class="container">
             <!-- HEADER LOGO -->
             <div class="header_logo">
-                <a href="/<?php echo $lang; ?>/"><img src="/images/logo-header.png" alt=""></a>
+                <a href="/<?php if($lang != DEFAULT_LANG) echo $lang; ?>"><img src="/images/logo-header.png" alt=""></a>
             </div>
             <!-- END / HEADER LOGO -->
 
