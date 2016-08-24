@@ -33,7 +33,7 @@ function render_page($page, $lang)
 		show_404();
 	}
 	//check if lang exist
-	if!(in_array($lang, $languages, true))
+	if(!in_array($lang, $languages, true))
 	{
 		show_404();
 	}
