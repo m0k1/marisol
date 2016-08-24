@@ -111,6 +111,5 @@
 
     <!-- Custom jQuery -->
     <script src="/js/scripts.js"></script>
-    <script src="/js/UpdateWeather2.js"></script>
 </body>
 </html>
