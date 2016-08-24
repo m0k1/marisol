@@ -27,7 +27,7 @@
                     <h2><?php echo $langs['check_avail']; ?></h2>
                 </div>
                 <div class="col-lg-9">
-                    <form id="ajax-form-search-room" action="#" method="post">
+                    <form id="ajax-form-search-room" action="api.php?check" method="post">
                         <div class="availability-form">
                             <input type="text" name="arrive" class="awe-calendar from" placeholder="<?php echo $langs['ariv_date']; ?>">
                             <input type="text" name="departure" class="awe-calendar to" placeholder="<?php echo $langs['dep_date']; ?>">
