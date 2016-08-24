@@ -605,7 +605,7 @@ function sendBooking() {
 				}
 			}), !1
 		}
-	}), e("#ajax-form-search-room .vailability-submit .awe-btn").click(function() {
+	}), e("#dasdsadasdasddasd").click(function() {
 		e(this).parents("form:first").submit()
 	})), e(document).ready(function() {
 		e(window).load(function() {
