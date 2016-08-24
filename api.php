@@ -1,6 +1,7 @@
 <?php
 use Cmfcmf\OpenWeatherMap;
 use Cmfcmf\OpenWeatherMap\Exception as OWMException;
+use Mailgun\Mailgun;
 // Must point to composer's autoload file.
 require 'vendor/autoload.php';
 if(isset($_GET["update_weather"]))
@@ -31,8 +32,7 @@ else if(isset($_GET['check']))
 }
 else
 {
-  require 'vendor/autoload.php';
-  use Mailgun\Mailgun;
+
   # First, instantiate the SDK with your API credentials and define your domain.
   $mg = new Mailgun("key-4622c2445014f16b6424838f2030ffbb");
   $domain = "mg.villa-marisol.me";
