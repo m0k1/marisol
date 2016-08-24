@@ -49,22 +49,12 @@
             <!-- HEADER MENU -->
             <nav class="header_menu">
                 <ul class="menu">
-                    <!-- for current selection class="current-menu-item" -->
-                    <?php if ($lang == DEFAULT_LANG){?>
-                    <li><a href="/"><?php echo $langs['home']; ?></a></li>
-                    <li><a href="/about"><?php echo $langs['about']; ?></a></li>
-                    <li><a href="/gallery"><?php echo $langs['gallery']; ?></a></li>
-                    <li><a href="/budva"><?php echo $langs['budva']; ?></a></li>
-                    <li><a href="/guestbook"><?php echo $langs['guestbook']; ?></a></li>
-                    <li><a href="/contact"><?php echo $langs['contact']; ?></a></li>
-                    <?php }else{?>
-                    <li><a href="/<?php echo $lang; ?>"><?php echo $langs['home']; ?></a></li>
-                    <li><a href="/<?php echo $lang; ?>/about"><?php echo $langs['about']; ?></a></li>
-                    <li><a href="/<?php echo $lang; ?>/gallery"><?php echo $langs['gallery']; ?></a></li>
-                    <li><a href="/<?php echo $lang; ?>/budva"><?php echo $langs['budva']; ?></a></li>
-                    <li><a href="/<?php echo $lang; ?>/guestbook"><?php echo $langs['guestbook']; ?></a></li>
-                    <li><a href="/<?php echo $lang; ?>/contact"><?php echo $langs['contact']; ?></a></li>
-                    <?php } ?>
+                    <li><a href="/<?php if($lang != DEFAULT_LANG) echo $lang."/"; ?>"><?php echo $langs['home']; ?></a></li>
+                    <li><a href="/<?php if($lang != DEFAULT_LANG) echo $lang."/"; ?>about"><?php echo $langs['about']; ?></a></li>
+                    <li><a href="/<?php if($lang != DEFAULT_LANG) echo $lang."/"; ?>gallery"><?php echo $langs['gallery']; ?></a></li>
+                    <li><a href="/<?php if($lang != DEFAULT_LANG) echo $lang."/"; ?>budva"><?php echo $langs['budva']; ?></a></li>
+                    <li><a href="/<?php if($lang != DEFAULT_LANG) echo $lang."/"; ?>guestbook"><?php echo $langs['guestbook']; ?></a></li>
+                    <li><a href="/<?php if($lang != DEFAULT_LANG) echo $lang."/"; ?>contact"><?php echo $langs['contact']; ?></a></li>
                 </ul>
             </nav>
             <!-- END / HEADER MENU -->
