@@ -16,8 +16,6 @@ function show404()
 	die;
 }
 
-function __($)
-
 function render_page($page, $lang)
 {
 	if($page == '')
