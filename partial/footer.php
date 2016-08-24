@@ -12,7 +12,7 @@
                             <div class="widget widget_logo">
                                 <div class="widget-logo">
                                     <div class="img">
-                                        <a href="<?php echo $lang; ?>/"><img src="/images/logo-footer.png" alt=""></a>
+                                        <a href="/<?php if($lang != DEFAULT_LANG) echo $lang; ?>"><img src="/images/logo-footer.png" alt=""></a>
                                     </div>
                                     <div class="text">
                                         <p><i class="hillter-icon-location"></i> Zrtava Fasizma 136, 85310 Budva, Montenegro</p>
@@ -111,6 +111,6 @@
 
     <!-- Custom jQuery -->
     <script src="/js/scripts.js"></script>
-    <script src="/js/UpdateWeather.js"></script>
+    <script src="/js/UpdateWeather2.js"></script>
 </body>
 </html>
