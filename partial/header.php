@@ -22,11 +22,11 @@
             <div class="header_right float-right">
 
                 <div class="dropdown language">
-                    <span class="uppercase"><?php echo $lang; ?><img src="/images/flags/<?php echo $lang; ?>.png"></span>
+                    <span class="uppercase"><?php echo $lang; ?><img width="14" src="/images/flags/<?php echo $lang; ?>.png"></span>
 
                     <ul>
 					<?php foreach ($languages as $value) { ?>
-                       <li<?php if($lang == $value) echo ' class="active" '; ?>><a class="uppercase" href="/<?php echo $value; ?>/"><?php echo $value; ?><img src="/images/flags/<?php echo value; ?>.png"></a></li>
+                       <li<?php if($lang == $value) echo ' class="active" '; ?>><a class="uppercase" href="/<?php echo $value; ?>/"><?php echo $value; ?><img width="14" src="/images/flags/<?php echo $value; ?>.png"></a></li>
                     <?php }  ?>
                     </ul>
                 </div>
