@@ -26,7 +26,7 @@
 
                     <ul>
 					<?php foreach ($languages as $value) { ?>
-                       <li<?php if($lang == $value) echo 'class="active"'; ?>><a class="uppercase" href="<?php echo $value; ?>/"><?php echo $value; ?></a></li>
+                       <li<?php if($lang == $value) echo ' class="active" '; ?>><a class="uppercase" href="<?php echo $value; ?>/"><?php echo $value; ?></a></li>
                     <?php }  ?>
                     </ul>
                 </div>
