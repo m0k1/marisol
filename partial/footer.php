@@ -45,15 +45,15 @@
                             <div class="widget">
                                 <h4 class="widget-title">&nbsp;</h4>
                                 <ul>
-                                  <% if (page.lang == DEFAULT_LANG){%>
+                                  <?php if ($lang == DEFAULT_LANG){ ?>
                                   <li><a href="/budva"><?php echo $langs['budva']; ?></a></li>
                                   <li><a href="/guestbook"><?php echo $langs['guestbook']; ?></a></li>
                                   <li><a href="/contact"><?php echo $langs['contact']; ?></a></li>
-                                  <% }else{%>
+                                  <?php }else{ ?>
                                  <li><a href="/<?php echo $lang; ?>/budva"><?php echo $langs['budva']; ?></a></li>
                                   <li><a href="/<?php echo $lang; ?>/guestbook"><?php echo $langs['guestbook']; ?></a></li>
                                   <li><a href="/<?php echo $lang; ?>/contact"><?php echo $langs['contact']; ?></a></li>
-                                  <% } %>
+                                  <?php } ?>
 
                                 </ul>
                             </div>
