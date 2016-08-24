@@ -35,7 +35,7 @@
 
                 <div class="col-md-6 col-lg-6 col-lg-offset-1">
                     <div class="contact-form">
-                        <form id="send-contact-form" action="https://api.villa-marisol.me/send.php" method="post">
+                        <form id="send-contact-form" action="api.php" method="post">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <input type="text" class="field-text"  name="name" placeholder="<?php echo $langs['name']; ?>">
