@@ -10,7 +10,7 @@ function page_exist($page)
 	return false;
 }
 
-function show404()
+function show_404()
 {
 	include '404.php';
 	die;
@@ -18,6 +18,7 @@ function show404()
 
 function render_page($page, $lang)
 {
+        global $languages;
 	if($page == '')
 	{
 		$page = 'home';
