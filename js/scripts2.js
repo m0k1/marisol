@@ -566,7 +566,7 @@ function sendBooking() {
 				minlength: e.format("At least {0} characters required.")
 			}
 		}
-	}), e("#ajax-form-search-room").length && (e("#ajax-form-search-room").validate({
+	}), e("#ajax12213").length && (e("#aqweqweqweqe").validate({
 		rules: {
 			arrive: {
 				required: !0,
