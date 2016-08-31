@@ -67,7 +67,7 @@
                     <div class="text">
                         <h2 class="heading"><?php echo $langs['about_us']; ?></h2>
                         <p><?php echo $langs['about_1']; ?></p>
-                        <a href="about" class="awe-btn awe-btn-default"><?php echo $langs['read_more']; ?></a>
+                        <a href="/<?php if($lang != DEFAULT_LANG) echo $lang."/"; ?>about" class="awe-btn awe-btn-default"><?php echo $langs['read_more']; ?></a>
                     </div>
                 </div>
             </div>
@@ -128,7 +128,7 @@
                     <div class="guestbook-header">
                         <h2 class="heading"><?php echo $langs['guest_book']; ?></h2>
                         <p><?php echo $langs['guest_book_intro']; ?></p>
-                         <a href="guestbook" class="awe-btn awe-btn-default"><?php echo $langs['view_more']; ?></a>
+                         <a href="/<?php if($lang != DEFAULT_LANG) echo $lang."/"; ?>guestbook" class="awe-btn awe-btn-default"><?php echo $langs['view_more']; ?></a>
                     </div>
                 </div>
 
@@ -310,7 +310,7 @@
             </div>
 
             <div class="our-gallery text-center">
-                <a href="gallery" class="awe-btn awe-btn-default"><?php echo $langs['browse_galery']; ?></a>
+                <a href="/<?php if($lang != DEFAULT_LANG) echo $lang."/"; ?>gallery" class="awe-btn awe-btn-default"><?php echo $langs['browse_galery']; ?></a>
             </div>
 
         </div>
