@@ -50,7 +50,7 @@
                                 <h4 class="widget-title">Tripadvisor</h4>
                                 <div class="tripadvisor">
                                     <p><?php echo $langs['hotel_reviews']; ?></p>
-                                    <img src="/images/tripadvisor.png" alt="">
+                                    <a href="https://www.tripadvisor.com/VacationRentalReview-g304074-d10734679-Villa_Marisol_deluxe-Budva_Budva_Municipality.html"><img src="/images/tripadvisor.png" alt=""></a>
                                 </div>
                             </div>
                             <a href="http://www.holidaycheck.de/h1443400"><img src="/images/Logo_RoHC_2016.png"/></a>
